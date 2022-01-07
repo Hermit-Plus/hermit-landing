@@ -12,17 +12,6 @@ const Footer = () => {
           <FooterLogo src={hermitLogo} alt='Hermit Craft Logo' />
         </div>
         <InfoFooter>
-          {/* <ul>
-            <FooterList>
-              <h2>Help</h2>
-            </FooterList>
-            <FooterList>
-              <h2>About</h2>
-            </FooterList>
-            <FooterList>
-              <h2>Donate</h2>
-            </FooterList>
-          </ul> */}
           <ul>
             <FooterList>
               <a

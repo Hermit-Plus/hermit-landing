@@ -1,5 +1,4 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
 
 import styled from 'styled-components';
 import { device } from '../responsive';
@@ -8,11 +7,6 @@ const InfoTwo = () => {
   return (
     <>
       <InfoTwoSection>
-        {/* <SignLink to='/hermit-plus'>
-          <SignInBox>
-            <h3>Sign Up</h3>
-          </SignInBox>
-        </SignLink> */}
         <InfoTitle>
           Think <span>Netflix</span> for Hermits
         </InfoTitle>
@@ -33,10 +27,6 @@ const InfoTwoSection = styled.section`
   @media ${device.mobileL} {
     margin-top: 550px;
   }
-  /* 
-  @media ${device.tablet} {
-    margin-top: 550px;
-  } */
 
   @media ${device.laptop} {
     margin-top: 525px;
@@ -74,28 +64,3 @@ const InfoText = styled.p`
     margin-bottom: 0.5em;
   }
 `;
-
-// const SignInBox = styled.div`
-//   background-color: var(--light-green);
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   border-radius: 8px;
-//   width: 300px;
-//   height: 50px;
-
-//   @media ${device.laptopL} {
-//     margin-right: 0;
-//     height: 44px;
-//   }
-// `;
-
-// const SignLink = styled(Link)`
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-
-//   text-decoration: none;
-//   color: var(--text-main);
-//   font-size: 22px;
-// `;

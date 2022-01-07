@@ -1,5 +1,4 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
 
 import logo from '../images/HermitPlusLogo.png';
 import facebook from '../images/facebook-f-brands.svg';
@@ -83,11 +82,15 @@ const Logo = styled.img`
   margin-left: 1em;
 
   @media ${device.tablet} {
-    margin-left: 0;
+    display: none;
+    opacity: 0;
+    width: 0;
   }
 
   @media ${device.mobileL} {
-    margin-left: 0;
+    display: none;
+    opacity: 0;
+    width: 0;
   }
 `;
 
@@ -108,33 +111,4 @@ const SocialBox = styled.div`
   img {
     width: 15px;
   }
-
-  @media ${device.tablet} {
-    display: none;
-  }
-
-  @media ${device.mobileL} {
-    display: none;
-    opacity: 0;
-    width: 0;
-  }
 `;
-
-// const SignLink = styled(Link)`
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-
-//   text-decoration: none;
-//   color: var(--text-main);
-//   font-size: 22px;
-//   margin-right: 3em;
-
-//   @media ${device.tablet} {
-//     display: none;
-//   }
-
-//   @media ${device.mobileL} {
-//     display: none;
-//   }
-// `;

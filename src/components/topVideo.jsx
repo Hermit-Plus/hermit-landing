@@ -240,21 +240,15 @@ const DesktopGrid = styled.div`
   margin-top: -50vh;
   overflow: hidden;
 
-  @media ${device.laptopL} {
-    /* margin-top: -30%; */
-  }
-
   @media ${device.laptopM} {
     grid-template-rows: repeat(12, 63px);
   }
 
   @media ${device.laptop} {
-    /* margin-top: -40%; */
     grid-template-rows: repeat(12, 49px);
   }
 
   @media ${device.tablet} {
-    /* margin-top: -50%; */
     grid-template-rows: repeat(12, 36px);
   }
 
