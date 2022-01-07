@@ -2,22 +2,43 @@ import React from 'react';
 // import { Link } from 'react-router-dom';
 
 import logo from '../images/HermitPlusLogo.png';
+import facebook from '../images/facebook-f-brands.svg';
+import twitter from '../images/twitter-brands.svg';
 
 import styled from 'styled-components';
 import { device } from '../responsive';
 
 const LandingNav = () => {
+  console.log(
+    'Thank you for your support! If you found this and want to help, please reach out. If you are looking for a designer / developer who knows how to make this kind of project, I would love to help you!'
+  );
+  console.log(
+    'This site is built in ReactJs and hosted in an AWS S3 bucket, served with AWS Cloudfront. Original design in Figma. Current project uses Slack and ClickUp to keep organized. Code is found on Github. Created by Mason Roberts, Developer3027'
+  );
   return (
     <Header>
       <Wrap>
         <LogoBox>
           <Logo src={logo} alt='hermit craft' />
         </LogoBox>
-        {/* <SignLink to='/hermit-plus'>
-          <SignInBox>
-            <h3>Sign Up</h3>
-          </SignInBox>
-        </SignLink> */}
+        <SocialDiv>
+          <a
+            href='https://www.facebook.com/hermitsplus'
+            target='_blank'
+            rel='noreferrer'>
+            <SocialBox>
+              <img src={facebook} alt='Facebook' />
+            </SocialBox>
+          </a>
+          <a
+            href='https://twitter.com/hermit_plus'
+            target='_blank'
+            rel='noreferrer'>
+            <SocialBox>
+              <img src={twitter} alt='Twitter' />
+            </SocialBox>
+          </a>
+        </SocialDiv>
       </Wrap>
     </Header>
   );
@@ -70,25 +91,34 @@ const Logo = styled.img`
   }
 `;
 
-// const SignInBox = styled.div`
-//   background-color: var(--light-green);
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   border-radius: 8px;
-//   width: 300px;
-//   height: 50px;
+const SocialDiv = styled.div`
+  display: flex;
+`;
 
-//   @media ${device.tablet} {
-//     display: none;
-//   }
+const SocialBox = styled.div`
+  background-color: var(--light-green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  width: 25px;
+  height: 40px;
+  margin-left: 1em;
 
-//   @media ${device.mobileL} {
-//     display: none;
-//     opacity: 0;
-//     width: 0;
-//   }
-// `;
+  img {
+    width: 15px;
+  }
+
+  @media ${device.tablet} {
+    display: none;
+  }
+
+  @media ${device.mobileL} {
+    display: none;
+    opacity: 0;
+    width: 0;
+  }
+`;
 
 // const SignLink = styled(Link)`
 //   display: flex;

@@ -26,8 +26,8 @@ const LandingInfo = () => {
               This web app takes after Disney Plus but features only the
               hermits. It uses the same YouTube url that you use to normally
               watch them. The graphics, design, and general feel is custom
-              created with an eye for the hermits we love. This is a celebration
-              of the hermits we love.
+              created with an eye for the hermits we love. Join me in this
+              celebration of them.
             </InfoSubTitle>
           </div>
           <InfoCards>
@@ -39,6 +39,15 @@ const LandingInfo = () => {
             <InfoCardImg src={pearlCard} alt='Gemini Tay information' />
             <InfoCardImg src={bdubsCard} alt='Gemini Tay information' />
           </InfoCards>
+          <div>
+            <InfoSubTitle>
+              I love the hermits and this project will have a lot to offer. I
+              believe this is a great concept and hope you do as well. It has
+              great potential and offers so much for everyone! If you love the
+              hermits, follow the project on Facebook and twitter. Thank you for
+              your support.
+            </InfoSubTitle>
+          </div>
         </Wrap>
       </InfoSection>
     </>
@@ -107,6 +116,7 @@ const InfoCards = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 2em;
 
   @media ${device.laptopL} {
     flex-wrap: wrap;

@@ -24,12 +24,22 @@ const Footer = () => {
             </FooterList>
           </ul> */}
           <ul>
-            {/* <FooterList>
-              <h2>Terms of Service</h2>
-            </FooterList> */}
-            {/* <FooterList>
-              <h2>Get Involved</h2>
-            </FooterList> */}
+            <FooterList>
+              <a
+                href='https://www.facebook.com/hermitsplus'
+                target='_blank'
+                rel='noreferrer'>
+                <h2>Facebook</h2>
+              </a>
+            </FooterList>
+            <FooterList>
+              <a
+                href='https://twitter.com/hermit_plus'
+                target='_blank'
+                rel='noreferrer'>
+                <h2>Twitter</h2>
+              </a>
+            </FooterList>
             <FooterList>
               <h2>&copy; copyright 2021</h2>
             </FooterList>
